@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Cleanser",
+    "price": "₹499",
+    "images": ["/img/cleanser1.jpg", "/img/cleanser2.jpg"]
+  },
+  {
+    "id": 2,
+    "name": "Moisturizer",
+    "price": "₹799",
+    "images": ["/img/moist1.jpg", "/img/moist2.jpg"]
+  },
+  {
+    "id": 3,
+    "name": "Sunscreen",
+    "price": "₹999",
+    "images": ["/img/sun1.jpg", "/img/sun2.jpg"]
+  }
+]
