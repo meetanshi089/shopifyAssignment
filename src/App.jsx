@@ -14,7 +14,10 @@ function App() {
           id: item.id,
           name: item.title,
           price: `₹${(item.price * 80).toFixed(0)}`,
-          images: [item.image, `https://picsum.photos/400?random=${item.id}`],
+          images: [
+            item.image,
+            `https://source.unsplash.com/400x400/?skincare,cosmetics&sig=${item.id}`,
+          ],
         }));
         console.log(formatted);
 

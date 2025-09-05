@@ -13,6 +13,9 @@ function ProductCard({ product, addToCart }) {
         src={hover ? product.images[1] : product.images[0]}
         alt={product.name}
         className="w-full h-64 object-cover"
+        onError={(e) => {
+          e.target.src = product.images[0];
+        }}
       />
 
       <div className="p-4 flex flex-col gap-2">
