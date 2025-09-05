@@ -14,10 +14,7 @@ function App() {
           id: item.id,
           name: item.title,
           price: `₹${(item.price * 80).toFixed(0)}`,
-          images: [
-            item.image,
-            `https://source.unsplash.com/400x400/?skincare,cosmetics&sig=${item.id}`,
-          ],
+          images: [item.image, `${item.image}?grayscale`],
         }));
         console.log(formatted);
 
