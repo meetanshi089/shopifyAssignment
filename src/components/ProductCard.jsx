@@ -12,7 +12,7 @@ function ProductCard({ product, addToCart }) {
       <img
         src={hover ? product.images[1] : product.images[0]}
         alt={product.name}
-        className="w-full h-64 object-cover"
+        className="w-full h-56 object-contain bg-gray-50 transition"
         onError={(e) => {
           e.target.src = product.images[0];
         }}

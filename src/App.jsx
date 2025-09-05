@@ -6,25 +6,28 @@ function App() {
   const [toast, setToast] = useState("");
 
   useEffect(() => {
-    // Fetch 6 products
-    fetch("https://fakestoreapi.com/products?limit=6")
-      .then((res) => res.json())
-      .then((data) => {
-        const formatted = data.map((item) => ({
+    async function fetchData() {
+      try {
+        const res = await fetch("https://fakestoreapi.com/products?limit=6");
+        const data = await res.json();
+
+        const formatted = data.map((item, idx) => ({
           id: item.id,
           name: item.title,
           price: `₹${(item.price * 80).toFixed(0)}`,
-          images: [item.image, `${item.image}?grayscale`],
+          images: [
+            item.image,
+            `/hover/hover${(idx % 6) + 1}.jpg`, //local hover image
+          ],
         }));
-        console.log(formatted);
 
         setProducts(formatted);
-        formatted.forEach((item) => {
-          const img = new Image();
-          img.src = item.images[1];
-        });
-      })
-      .catch((err) => console.error("Error fetching products:", err));
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    }
+
+    fetchData();
   }, []);
 
   const addToCart = (item) => {
