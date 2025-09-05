@@ -1,12 +1,69 @@
-# React + Vite
+# 🛍️ Shopify Assignment – Product Grid
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **React + Vite + Tailwind CSS** based product grid application. It fetches product data from an API, displays them in a modern UI, and provides a hover image swap feature with an "Add to Cart" notification.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 [View Deployed App](https://shopify-assignment-six.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Repository
+
+🔗 [GitHub Repository](https://github.com/meetanshi089/shopifyAssignment)
+
+---
+
+## 📸 Features
+
+- ✅ **Product Grid**: Displays products fetched from [FakeStoreAPI](https://fakestoreapi.com).
+- ✅ **Hover Effect**: Each product swaps to a second image on hover (using local hover images).
+- ✅ **Add to Cart**: Click button to show a toast notification.
+- ✅ **Responsive Design**: Works seamlessly on desktop and mobile.
+- ✅ **Clean Code**: Structured with reusable `ProductCard` component.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React (Vite)
+- **Styling**: Tailwind CSS
+- **API**: FakeStoreAPI (for product data)
+- **Assets**: Local hover images stored in `/public/hover/`
+
+---
+
+## 📂 Project Structure
+
+shopify-assignment/
+├── public/
+│ └── hover/
+│ ├── hover1.jpg
+│ ├── hover2.jpg
+│ ├── hover3.jpg
+│ ├── hover4.jpg
+│ ├── hover5.jpg
+│ └── hover6.jpg
+├── src/
+│ ├── components/
+│ │ └── ProductCard.jsx
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+├── package.json
+├── tailwind.config.js
+└── README.md
+
+## 💡 Future Improvements
+
+- 🔍 Add product search & filtering
+- 🛒 Add cart page with product list
+- 🗄️ Integrate a backend for persistent cart
+
+---
+
+## 👨‍💻 Author
+
+**Meetanshi Tomar**
